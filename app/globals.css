@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #e2e8f0;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+.immersive-bg {
+  background: radial-gradient(circle at 50% 30%, #16162a 0%, #050505 100%);
+}
+
+.immersive-grid {
+  background-image: radial-gradient(#4fd1c5 0.6px, transparent 0.6px);
+  background-size: 24px 24px;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(79, 209, 197, 0.25);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 30px rgba(79, 209, 197, 0.4);
+}
