@@ -71,6 +71,8 @@ export function SocraticArena({ isSk }: Props) {
     setLoading(true);
 
     try {
+      // Static deployment: there is no server to call, so this always takes the
+      // offline path below. Kept as a fetch so a hosted build works unchanged.
       const res = await fetch('/api/gemini/socratic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

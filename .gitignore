@@ -5,3 +5,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# build output — produced by CI, not committed
+/out/
+/.next/
+/node_modules/

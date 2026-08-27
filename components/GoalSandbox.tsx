@@ -45,6 +45,8 @@ export function GoalSandbox({ isSk }: Props) {
     setResult(null);
 
     try {
+      // Static deployment: there is no server to call, so this always takes the
+      // offline path below. Kept as a fetch so a hosted build works unchanged.
       const res = await fetch('/api/gemini/alignment-eval', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
